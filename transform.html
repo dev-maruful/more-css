@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .container, .inner{
+            width: 150px;
+            height: 150px;
+            border: 2px solid saddlebrown;
+        }
+        .container{
+            background-color: black;
+        }
+        .inner{
+            background-color:aqua;
+            transform: translate(50px, 50px) scale(0.8) rotate(45deg) ;
+            /* transform: rotate(45deg); we cannot add more than one same property at a time, if we want to apply more than one same property at a time, we need to write the values under one property item */
+        }
+    </style>
+</head>
+<body>
+    <h1>I am joining transformers.</h1>
+    <div class="container">
+        <div class="inner">box-1</div>
+    </div>
+    <div class="container">
+        <div class="inner">box-2</div>
+    </div>
+    <div class="container">
+        <div class="inner">box-3</div>
+    </div>
+</body>
+</html>
